@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.topnav{
+    background-color: rgb(207, 11, 174);
+    padding: 30px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.top{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    /*float:right;*/
+    justify-content: flex-end;
+}
+
+
+.topnav a{
+    padding: 30px;
+    color: antiquewhite;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+.topnav a:hover{
+    background-color: black;
+}
+
+.sidenav{
+    width: 250px;
+    height: 100%;
+    background-color: rgb(207, 11, 174);
+    position: fixed;
+    /* display: block; */
+}
+
+
+
+.sidenav ul{
+    display: block;
+    list-style: none;
+}
+
+.sidenav li{
+    padding: 20px;
+    font-size: 25px;
+    
+}
+
+.sidenav a{
+    padding: 30px;
+    color: aliceblue;
+}
+
+.sidenav li:hover{
+    background-color: black;
+}
+
+
+/*.container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-left: 600px;
+    
+}
+
+.container .card{
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-right: 50px;
+    gap:20px;
+    width: 250px;
+    border: 5px dashed black;
+    padding: 20px;
+    background-color: darkkhaki;
+
+}*/
+
+.card .click:active{
+    background-color: brown;
+}
+
+.card .click:hover{
+    background-color: rgb(36, 222, 15);
+}
+
+.card .click:visited{
+    background-color: rgb(168, 17, 218);
+}
+
+.link{
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    padding: 150px;
+}
+
+
+.link .click:active{
+    background-color: brown;
+}
+
+.link .click:hover{
+    background-color: rgb(36, 222, 15);
+}
+
+.link .click:visited{
+    background-color: rgb(168, 17, 218);
+}
+
+
+
+.container {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px; /* Adjust for sidebar */
+}
+
+/* 3. Make cards responsive */
+.container .card {
+    margin: 20px;
+    width: 280px;
+    flex-shrink: 0;
+    gap:20px;
+    border: 5px dashed black;
+    padding: 20px;
+    background-color: darkkhaki;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .container {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav a {
+        padding: 15px;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Optional: Adjust font size and spacing for smaller screens */
+@media screen and (max-width: 480px) {
+    .topnav a,
+    .sidenav a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .link {
+        font-size: 20px;
+        padding: 50px;
+    }
+}
