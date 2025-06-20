@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student_name="swetha";
+        if(typeof student_name==="string"){
+            console.log(" string ")
+        }
+        console.log(typeof 29);
+        console.log(typeof "swetha");
+        console.log(typeof true);
+        console.log(typeof undefined);
+        console.log(typeof null);
+        console.log(typeof {course:"ai&ds"});
+        console.log(typeof [1,2,4]);
+
+        //merge
+        let sub="science: ";
+        let mark=89;
+        let result=sub+mark;
+        console.log(result)
+        // charat
+
+        console.log(sub.charAt(0))
+        console.log(sub.charAt(1))
+        console.log(sub.charAt(2))
+        console.log(sub.charAt(4))
+
+
+        //lastindexof
+
+        console.log(sub.lastIndexOf("e"))
+        
+        
+        //typecast and Arthimetic
+
+        let word="29";
+        let num=Number(word);
+        let add=num+10;
+        let subract=num-1;
+        console.log(add)
+        console.log(subract)
+
+
+        //nan
+        let str="teacher";
+        let output=Number(str);
+        console.log(output);
+
+
+
+
+        //isinteger?
+
+
+        let eg=1.23;
+        let correct=29;
+        console.log(Number.isInteger(eg))
+        console.log(Number.isInteger(correct))
+
+
+        //parseint parsefloat
+
+        console.log(parseInt(39.999))
+        console.log(parseFloat("39.122absc"))
+
+        //to fixed
+        let f=78.9999;
+        console.log(f.toFixed(3))
+
+
+        //switch
+        let day="wed";
+        switch(day){
+            case "mon":
+                console.log("start of week")
+                break;
+            case "wed":
+                console.log("mid of week")
+                break;
+            default :
+                console.log("just a day in week")
+        }
+
+        //var const let
+
+
+        var dummy="123";
+        var dummy="234";
+        console.log(dummy)
+
+        {
+            var dummy=567;
+            console.log(dummy)
+        }
+        console.log(dummy)
+
+
+        let summa=290;
+        console.log(summa)
+        {
+            let summa=420
+            console.log(summa)
+        }
+        console.log(summa)
+
+
+        const example=222;
+        console.log(example)
+        {
+            const example=333;
+            console.log(example)
+        }
+        console.log(example)
+
+        //push, pop, unshift, and delete
+
+        let store=["candy","shampoo","veggies","egg","toys"];
+
+
+        store.push("milagai thul");
+        console.log(store);
+
+        store.pop();
+        console.log(store);
+
+        store.unshift("pen");
+        console.log(store);
+
+        delete store[1];
+        console.log(store);
+
+
+        let students=["arun","babu","chandru","danish","elumalai"]
+        console.log(students)
+
+
+        //splice
+        students.splice(1,4,"name");
+        console.log(students)
+
+
+        ///reverse
+        let summaarray=[1,2,3,4,5]
+        summaarray.reverse();
+        console.log(summaarray)
+
+        //concate
+        let summarr=[22,22]
+        let merge =summaarray.concat(summarr)
+        console.log(merge)
+
+        let database={
+            name:"ramu",
+            age:23,
+            marks:[89,90,90,80]
+        }
+        console.log(database.marks[2])
+
+
+
+
+    </script>
+</body>
+</html>
