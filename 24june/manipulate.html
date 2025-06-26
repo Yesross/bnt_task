@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="mypara">my paragraph <i>hello</i></p>
+    <div id="myDiv"></div>
+
+
+    <!-- add toggle remove -->
+
+    <button id="toggleBtn">Toggle Class</button>
+    <div id="myElement">Hello</div>
+
+    <!-- how to add evenlister in jquery -->
+     <button id="testbtn">Hello</button>
+
+    <script>
+        const mypara = $("mypara").html();
+        $("mypara").html("<h1>hello</h1>")
+
+
+        let txt = $("#myDiv").text();
+        $("#myDiv").text("Just plain text");
+
+
+
+        $("#toggleBtn").click(function () {
+            $("#myElement").toggleClass("highlight")
+            $("#myElement").addClass("active");
+
+        })
+
+        $("#testbtn").on("click",function(){
+            alert("hello")
+        })
+
+
+    </script>
+</body>
+
+</html>

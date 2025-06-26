@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="text"></h2>
+
+    
+
+
+
+    <script>
+        const text = document.getElementById("text");
+        let sec = 10;
+
+        const countdown = setInterval(() => {
+            text.textContent = sec + " seconds remaining";
+            sec--;
+
+            if (sec < 0) {
+                clearInterval(countdown);
+                text.textContent = "timeup"
+            }
+        }, 1000)
+
+
+
+
+
+
+
+
+
+        const school = {
+            name: "swetha",
+            age: 21,
+            hobbies: ["singing", "dancing", "caligraphy"],
+            show() {
+                console.log("my name is " + this.name)
+            }
+
+        }
+        school.show();
+
+
+        const arr = [1, 2, 3, 4];
+        const double = arr.map(num => num * 2)
+        console.log(double)
+
+
+        const fil = arr.filter(num => num % 2 == 0)
+        console.log(fil)
+
+
+
+
+        try {
+            let age = -5;
+            if (age < 0) {
+                throw "Age cannot be negative";
+            }
+            console.log("Age is: " + age);
+        } catch (error) {
+            console.log("Error: " + error);
+        } finally {
+            console.log("Execution finished");
+        }
+
+
+
+
+    </script>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
